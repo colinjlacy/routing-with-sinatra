@@ -21,6 +21,12 @@ get '/tts/:whatever/?' do
 	"TTS #{params['whatever']}"
 end
 
+#multiple params
+
+get '/multiple/:this/params/:that/?' do
+	"I see <strong>#{params['this']}</strong> and <strong>#{params['that']}</strong> in your route params!"
+end
+
 #wildcard
 
 get '*' do
