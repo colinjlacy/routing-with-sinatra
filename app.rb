@@ -11,3 +11,8 @@ get '/static/?' do
 	File.read(File.join('views','template.html'))
 end
 
+#wildcard
+
+get '*' do
+	status 404
+end
