@@ -38,6 +38,15 @@ get '/erb/:thing/?' do
 	erb :variables, :locals => {:variable => params['thing']}
 end
 
+get '/instance/?' do
+	@instance = {
+		name: "Colin",
+		class: "TTS",
+		language: "Ruby"
+	}
+	erb :instance
+end
+
 #wildcard
 
 get '*' do

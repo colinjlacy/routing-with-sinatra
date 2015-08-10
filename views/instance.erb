@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Static Template</title>
+    <title>Instance Template</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 </head>
@@ -16,14 +16,14 @@
             <hr/>
             <h2 class="text-center">And your dynamic content is:</h2> 
             <ul class="lead">
-                <li>name: <%= @variable[:name] %></li>
-                <li>class: <%= @variable[:class] %></li>
-                <li>language: <%= @variable[:language] %></li>
+                <li>name: <%= @instance[:name] %></li>
+                <li>class: <%= @instance[:class] %></li>
+                <li>language: <%= @instance[:language] %></li>
             </ul>
         </div>
         <hr/>
         <p class="text-center text-muted">
-            Oh...I can feel it...
+            That's some serious stuff right there...
         </p>
     </div>
 </div>
