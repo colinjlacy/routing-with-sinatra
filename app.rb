@@ -20,7 +20,6 @@ end
 get '/tts/:whatever/?' do
 	"TTS #{params['whatever']}"
 end
-
 #multiple params
 
 get '/multiple/:this/params/:that/?' do
@@ -33,6 +32,11 @@ get '/erb/?' do
 	erb :template
 end
 
+#variables
+
+get '/erb/:thing/?' do
+	erb :variables, :locals => {:variable => params['thing']}
+end
 
 #wildcard
 
