@@ -27,6 +27,13 @@ get '/multiple/:this/params/:that/?' do
 	"I see <strong>#{params['this']}</strong> and <strong>#{params['that']}</strong> in your route params!"
 end
 
+#using a static erb template (embedded ruby file)
+#looks like html file
+get '/erb/?' do
+	erb :template
+end
+
+
 #wildcard
 
 get '*' do
