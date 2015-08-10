@@ -11,6 +11,16 @@ get '/static/?' do
 	File.read(File.join('views','template.html'))
 end
 
+#route parameter variables
+
+get '/params/:whatever/?' do
+	"You entered #{params['whatever']} as a route parameter"
+end
+
+get '/tts/:whatever/?' do
+	"TTS #{params['whatever']}"
+end
+
 #wildcard
 
 get '*' do
