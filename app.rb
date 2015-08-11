@@ -42,9 +42,22 @@ get '/instance/?' do
 	@instance = {
 		name: "Colin",
 		class: "TTS",
-		language: "Ruby"
+		language: "PHP",
+		freelance: "NO!"
 	}
 	erb :instance
+end
+
+get '/class/?' do
+	erb :form
+end
+
+post '/class/?' do
+	@data = {
+		first_name: params[:first_name],
+		last_name: params[:last_name]
+	}
+	erb :display
 end
 
 #wildcard
